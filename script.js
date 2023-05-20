@@ -1,6 +1,6 @@
 const textArea = document.querySelector(".entrada");
 const mensaje = document.querySelector(".salida");
-const btnc = document.getElementById('btnc')
+
 const derecha = document.querySelector(".salida")
 
 function btnEncriptar(){
@@ -8,7 +8,9 @@ function btnEncriptar(){
     mensaje.value = textoEncriptado
     textArea.value= ""
     derecha.style.backgroundImage = "none"
-    
+    document.getElementById("bcopy").style.display = "show"
+    document.getElementById("bcopy").style.display = "flex"
+   
 
 }
 
@@ -51,7 +53,9 @@ function desencriptar(stringDesencriptada){
     
 }
 
-btnc.addEventListener('click', e =>{
+const btnc = document.getElementById('copy');
+
+btnc.addEventListener('click', e => {
     mensaje.select();
     document.execCommand('copy');
 
