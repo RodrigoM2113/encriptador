@@ -34,6 +34,8 @@ function btnDesencriptar(){
     mensaje.value = textoEncriptado
     textArea.value= ""
     derecha.style.backgroundImage = "none"
+    document.getElementById("bcopy").style.display = "show"
+    document.getElementById("bcopy").style.display = "flex"
 
 
 }
